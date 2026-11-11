@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+results/
+workspace/
+*.nvp
+*.qdpx
+*.native.log
+config.local.json
+
+*.dll
+*.exe
+native/build/

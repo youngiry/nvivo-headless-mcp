@@ -1,0 +1,14 @@
+- insert:
+    - id: mcp-nvivo_headless
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: nvivo_headless
+        transport: stdio
+        command: 'C:/tools/nvivo-headless-mcp/.venv/Scripts/python.exe'
+        args: ['C:/tools/nvivo-headless-mcp/server.py']
+        toolCallTimeoutMs: 1800000
+        failOnStartupError: true
+        env:
+          NVIVO_INSTALL_DIR: 'C:/Program Files/Lumivero/NVivo 15'
+          NVIVO_WORKSPACE: 'C:/NVivoProjects'
+          NVIVO_AUTHOR: Shalom

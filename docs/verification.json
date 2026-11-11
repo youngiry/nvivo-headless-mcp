@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "verified_at": "2026-11-11T08:18:56.824585+00:00",
+  "transport": "MCP stdio",
+  "tools": [
+    "nvivo_create_project",
+    "nvivo_inspect_project",
+    "nvivo_list_sources",
+    "nvivo_read_source",
+    "nvivo_list_codes",
+    "nvivo_add_code",
+    "nvivo_import_text",
+    "nvivo_add_coding_memo",
+    "nvivo_code_text",
+    "nvivo_read_codings",
+    "nvivo_sync_coding",
+    "nvivo_checkpoint",
+    "nvivo_doctor"
+  ],
+  "calls": [
+    "nvivo_create_project",
+    "nvivo_import_text",
+    "nvivo_add_code",
+    "nvivo_add_code",
+    "nvivo_list_codes",
+    "nvivo_code_text",
+    "nvivo_code_text",
+    "nvivo_add_coding_memo",
+    "nvivo_read_codings",
+    "nvivo_checkpoint",
+    "nvivo_inspect_project",
+    "nvivo_read_codings",
+    "nvivo_read_source",
+    "nvivo_read_source",
+    "nvivo_checkpoint"
+  ],
+  "checks": {
+    "native_empty_project": true,
+    "native_document_import": true,
+    "code_hierarchy": true,
+    "exact_quote_after_supplementary_unicode": true,
+    "idempotent_coding_retry": true,
+    "coding_development_memo": true,
+    "detach_and_reattach": true,
+    "text_and_coding_readback": true,
+    "native_project_service_reopen": true
+  },
+  "verification_scope": "NVivo ProjectService native creation, import, reopen and service-level readback through MCP stdio",
+  "dsh_configuration_composition": "passed; profile web with supplied patch",
+  "dsh_model_driven_workflow": "not exercised"
+}
